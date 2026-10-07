@@ -138,9 +138,35 @@
     <P>
         Para los formularios utilizamos la etiqueta &lt;from&gt;
     </P>
-    <form 
-        action="Formulario" method="post"
-    
-    ></form>
+    <form action="Formulario" method="post">
+        <label for="Usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario"> <br>
+        <label for="pwd">Contraseña</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Ingresa tu Contraseña"><br> 
+        <label>Sexo:</label>
+        <label for="Hombre">Hombre</label>
+        <input type="radio" name="Sexo" id="Hombre" value="Hombre">
+        <label for="Mujer">Mujer</label>
+        <input type="radio" name="Sexo" id="Mujer" value="Mujer">
+        <br>
+        <label for="Pais">Pais:</label>
+        <select name="Pais" id="Pais">
+        <option>
+            Estados Unidos
+        </option>
+        <option>
+            Canada
+        </option>
+        <option>
+            Mexico
+        </option>
+        <option>
+            Otro
+        </option>
+        </select> <br>
+        <label for="Terminos">Aceotas los terminos</label>
+        <input type="checkbox" name="terminos" id="terminos" value="Aceptar"> <br>
+        <input type="submit" value="Enviar!">
+    </form>
 </body>
 </html>
